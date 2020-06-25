@@ -1,11 +1,11 @@
 package infrastructure.database;
 
-import entities.UserVO;
+import entities.CheckoutVO;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends JpaRepository<UserVO, Integer> {
+public interface UserRepository extends JpaRepository<CheckoutVO, Integer> {
 
 }
 

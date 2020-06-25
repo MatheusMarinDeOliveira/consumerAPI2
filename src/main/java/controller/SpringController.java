@@ -1,17 +1,29 @@
 package controller;
 
-import entities.UserVO;
+import entities.CheckoutVO;
+import infrastructure.database.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @ComponentScan(basePackages = {"infrastructure.rabbitmq"})
 public class SpringController {
 
-    @PostMapping("/user")
-    public String saveUser(@RequestBody UserVO payload) {
-        return "hello";
+    @Autowired
+    public UserRepository userRepository;
+
+    @GetMapping("/statusTransaction")
+    public String statusTransaction(@RequestParam Integer idCheckout) {
+
+        try{
+            CheckoutVO statusTransaction = userRepository.getOne(idCheckout);
+            return statusTransaction.toString();
+
+        }catch (Exception e) {
+            return "your request is processing, please wait!";
+        }
+
+
     }
 }

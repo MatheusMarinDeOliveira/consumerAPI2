@@ -20,18 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46823151-62b7-456c-a1a9-e78d1a95ef31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/SpringController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/SpringController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/infrastructure/rabbitmq/RabbitMQListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/infrastructure/rabbitmq/RabbitMQListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/infrastructure/rabbitmq/RabbitMQService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/BoundLeg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/PlacesQuoteApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Quotes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SpringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SpringController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infrastructure/rabbitmq/RabbitMQService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/CheckoutVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infrastructure/database/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infrastructure/database/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infrastructure/rabbitmq/RabbitMQListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infrastructure/rabbitmq/RabbitMQListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +53,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -74,6 +79,21 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -98,14 +118,92 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593043560535">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1593043560535" />
+    <state x="2688" y="227" width="374" height="633" key="#com.intellij.ide.util.MemberChooser" timestamp="1593040168208">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2688" y="227" width="374" height="633" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1593040168208" />
+    <state x="2584" y="0" width="582" height="1080" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593039539328">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2584" y="0" width="582" height="1080" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1593039539328" />
+    <state x="380" y="176" width="1366" height="779" key="#xdebugger.evaluate" timestamp="1593046650529">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="380" y="176" width="1366" height="779" key="#xdebugger.evaluate/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1593046650529" />
+    <state width="1802" height="441" key="GridCell.Tab.0.bottom" timestamp="1593046755872">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="441" key="GridCell.Tab.0.bottom/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1593046755872" />
+    <state width="1802" height="441" key="GridCell.Tab.0.center" timestamp="1593046755872">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="441" key="GridCell.Tab.0.center/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1593046755872" />
+    <state width="1802" height="441" key="GridCell.Tab.0.left" timestamp="1593046755872">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="441" key="GridCell.Tab.0.left/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1593046755872" />
+    <state width="1802" height="441" key="GridCell.Tab.0.right" timestamp="1593046755872">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="441" key="GridCell.Tab.0.right/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1593046755872" />
+    <state width="1802" height="441" key="GridCell.Tab.1.bottom" timestamp="1593046755872">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="441" key="GridCell.Tab.1.bottom/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1593046755872" />
+    <state width="1802" height="441" key="GridCell.Tab.1.center" timestamp="1593046755872">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="441" key="GridCell.Tab.1.center/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1593046755872" />
+    <state width="1802" height="441" key="GridCell.Tab.1.left" timestamp="1593046755872">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="441" key="GridCell.Tab.1.left/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1593046755872" />
+    <state width="1802" height="441" key="GridCell.Tab.1.right" timestamp="1593046755872">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="441" key="GridCell.Tab.1.right/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1593046755872" />
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1592862319858">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1592862319858" />
+    <state width="924" height="525" key="XDebugger.FullValuePopup" timestamp="1593045532491">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="924" height="525" key="XDebugger.FullValuePopup/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1593045532491" />
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1593040896499">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1593040896499" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/infrastructure/rabbitmq/RabbitMQListener.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/infrastructure/rabbitmq/RabbitMQListener.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/SpringController.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,7 +1,7 @@
 package infrastructure.rabbitmq;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import entities.UserVO;
+import entities.CheckoutVO;
 import infrastructure.database.UserRepository;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,11 +18,22 @@ public class RabbitMQListener {
         ObjectMapper objectMapper = new ObjectMapper();
         String messageInJson = new String(message);
         try {
-            UserVO userVO = objectMapper.readValue(messageInJson, UserVO.class);
-            userRepository.save(userVO);
+            CheckoutVO checkoutVO = objectMapper.readValue(messageInJson, CheckoutVO.class);
+            processTransaction();
+            userRepository.flush();
+            userRepository.save(checkoutVO);
+
         } catch (Exception e) {
-            System.out.println("Cannot deserialize the fields");
+            e.printStackTrace();
         }
         System.out.println("I listened a message from RabbitMQ!!");
+    }
+
+    private void processTransaction() {
+        try {
+            Thread.sleep(1000);
+        } catch (Exception e) {
+            System.out.println("Cannot process the transaction");
+        }
     }
 }
