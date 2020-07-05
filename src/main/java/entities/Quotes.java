@@ -10,8 +10,11 @@ import javax.persistence.*;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Quotes {
 
-    @JsonProperty("QuoteId")
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
+
+    @JsonProperty("QuoteId")
     private String quoteId;
 
     @JsonProperty("MinPrice")
