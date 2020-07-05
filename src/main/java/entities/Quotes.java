@@ -1,11 +1,13 @@
 package entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
 
 @Entity
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Quotes {
 
     @JsonProperty("QuoteId")
@@ -19,14 +21,6 @@ public class Quotes {
     @JsonProperty("Direct")
     @Column
     private String direct;
-
-    @JsonProperty("OutboundLeg")
-    @OneToOne(cascade = {CascadeType.ALL})
-    private BoundLeg outboundLeg;
-
-    @JsonProperty("InboundLeg")
-    @OneToOne(cascade = {CascadeType.ALL})
-    private BoundLeg inboundLeg;
 
     @JsonProperty("QuoteDateTime")
     @Column
