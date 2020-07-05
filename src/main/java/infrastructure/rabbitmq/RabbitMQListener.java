@@ -31,7 +31,7 @@ public class RabbitMQListener {
 
     private void processTransaction() {
         try {
-            Thread.sleep(1000);
+            Thread.sleep(10000);
         } catch (Exception e) {
             System.out.println("Cannot process the transaction");
         }
