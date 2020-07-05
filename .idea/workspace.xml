@@ -20,16 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46823151-62b7-456c-a1a9-e78d1a95ef31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/BoundLeg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/PlacesQuoteApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Quotes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SpringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SpringController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/CheckoutVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infrastructure/database/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infrastructure/database/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infrastructure/rabbitmq/RabbitMQListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infrastructure/rabbitmq/RabbitMQListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

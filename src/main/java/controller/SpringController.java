@@ -13,6 +13,7 @@ public class SpringController {
     @Autowired
     public UserRepository userRepository;
 
+    @CrossOrigin
     @GetMapping("/statusTransaction")
     public String statusTransaction(@RequestParam Integer idCheckout) {
 
