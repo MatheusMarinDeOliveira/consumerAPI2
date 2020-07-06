@@ -15,6 +15,7 @@ public class RabbitMQListener {
 
     @RabbitListener(queues = "QUEUE_NAME")
     public void listen(byte[] message) {
+        System.out.println("Starting processing");
         ObjectMapper objectMapper = new ObjectMapper();
         String messageInJson = new String(message);
         try {

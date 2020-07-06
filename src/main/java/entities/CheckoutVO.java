@@ -1,17 +1,16 @@
 package entities;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.hibernate.annotations.Columns;
 
 import javax.persistence.*;
+import java.util.UUID;
 
 @Entity(name = "checkout")
 public class CheckoutVO {
 
     @JsonProperty("idCheckout")
     @Id
-    @GeneratedValue
-    private Integer idCheckout;
+    private UUID idCheckout;
 
     @JsonProperty("name")
     @Column
@@ -46,11 +45,11 @@ public class CheckoutVO {
         return "idCheckhout "+idCheckout +"cardNumber "+ cardNumber;
     }
 
-    public Integer getIdCheckout() {
+    public UUID getIdCheckout() {
         return idCheckout;
     }
 
-    public void setIdCheckout(Integer idCheckout) {
+    public void setIdCheckout(UUID idCheckout) {
         this.idCheckout = idCheckout;
     }
 

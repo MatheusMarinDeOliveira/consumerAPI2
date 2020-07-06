@@ -15,16 +15,20 @@ public class SpringController {
 
     @CrossOrigin
     @GetMapping("/statusTransaction")
-    public String statusTransaction(@RequestParam Integer idCheckout) {
-
-        try{
+    public Status statusTransaction(@RequestParam Integer idCheckout) {
+        try {
             CheckoutVO statusTransaction = userRepository.getOne(idCheckout);
-            return statusTransaction.toString();
-
-        }catch (Exception e) {
-            return "your request is processing, please wait!";
+            return new Status("done");
+        } catch (Exception e) {
+            return new Status("processing");
         }
+    }
 
+    class Status {
+        String status;
 
+        Status(String status) {
+            this.status = status;
+        }
     }
 }
