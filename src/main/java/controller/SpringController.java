@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Optional;
+import java.util.UUID;
+
 @RestController
 @ComponentScan(basePackages = {"infrastructure.rabbitmq"})
 public class SpringController {
@@ -15,13 +18,14 @@ public class SpringController {
 
     @CrossOrigin
     @GetMapping("/statusTransaction")
-    public Status statusTransaction(@RequestParam Integer idCheckout) {
-        try {
-            CheckoutVO statusTransaction = userRepository.getOne(idCheckout);
+    public Status statusTransaction(@RequestParam UUID idCheckout) {
+        Optional<CheckoutVO> statusTransaction = userRepository.findById(idCheckout);
+
+        if (statusTransaction.isPresent()) {
             return new Status("done");
-        } catch (Exception e) {
-            return new Status("processing");
         }
+
+        return new Status("processing");
     }
 
     class Status {
